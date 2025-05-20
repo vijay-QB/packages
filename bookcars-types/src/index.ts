@@ -1,0 +1,6 @@
+export * from "./user.interface"
+export * from "./otp.interface"
+export * from "./auth.interface"
+export * from "./location.interface"
+export * from "./country.interface"
+export * from "./car.interface"

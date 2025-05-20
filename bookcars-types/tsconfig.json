@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",             // ✅ Good: Modern JS
+    "module": "commonjs",           // ✅ Required for Node compatibility
+    "declaration": true,            // ✅ Needed for type support in consumers
+    "declarationMap": true,         // 🆕 Helpful for debugging
+    "outDir": "dist",               // ✅ Good: All builds go into dist
+    "rootDir": "src",               // ✅ Good: Keeps file structure clean
+    "strict": true,                 // ✅ Enforces type safety
+    "esModuleInterop": true,        // ✅ Allows default imports from CJS
+    "skipLibCheck": true,           // ✅ Skips node_modules type checks
+    "composite": true,     
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,          // ✅ Required if using project references
+    "moduleResolution": "node",     // 🆕 Ensures Node-style resolution
+    "resolveJsonModule": true,      // 🆕 In case you import JSON files
+    "forceConsistentCasingInFileNames": true // 🆕 Avoids cross-platform casing issues
+  },
+  "include": ["src"]
+}
